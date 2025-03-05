@@ -1,28 +1,22 @@
 import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
 import Button from 'react-bootstrap/Button';
 
 function NavMenu() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
-      <Container>
-        <Navbar.Brand href="#home">
-          <img src="/images/actual-logo.png" alt="Site Logo" width="100" />
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto d-flex">
-            <Nav.Link href="#coding">
-              <Button variant="primary">Coding</Button>
-            </Nav.Link>
-            <Nav.Link href="#comics">
-              <Button variant="primary">Comics</Button>
-            </Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+    <Container fluid className="d-flex align-items-center py-0 p-0 m-0 custom-navbar">
+      <img src="/images/actual-logo.png" alt="Site Logo" width="232" />
+      <div className="d-flex w-100">
+        <Button variant="outline-info" size="lg" className="w-33 py-5 mb-0 m-0 button-text no-round">
+          CODING
+        </Button>
+        <Button variant="outline-success" size="lg" className="w-33 py-5 mb-0 m-0 button-text no-round">
+          COMICS
+        </Button>
+        <Button variant="outline-danger" size="lg" className="w-33 py-5 mb-0 m-0 button-text no-round">
+          CONTACT
+        </Button>
+      </div>
+    </Container>
   );
 }
 
