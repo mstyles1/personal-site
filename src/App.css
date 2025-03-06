@@ -10,7 +10,7 @@ html, body {
 }
 
 .custom-navbar {
-  background-color: #2d0a53 !important; 
+  background-color: #1d0734 !important; 
 }
 
 .custom-toggler {
@@ -31,4 +31,50 @@ html, body {
 
 .no-round {
   border-radius: 0 !important;
+}
+
+/* Remove outline */
+.custom-navbar .btn {
+  outline: none;
+}
+
+/* Keep border color the same as background color before hover */
+.custom-navbar .btn-outline-info {
+  color: #17a2b8; /* Set text color to match the info button color */
+  border-color: #1d0734 !important; /* Set the border to match background */
+}
+
+.custom-navbar .btn-outline-success {
+  color: #28a745; /* Set text color to match the success button color */
+  border-color: #1d0734 !important; /* Set the border to match background */
+}
+
+.custom-navbar .btn-outline-danger {
+  color: #dc3545; /* Set text color to match the danger button color */
+  border-color: #1d0734 !important; /* Set the border to match background */
+}
+
+/* Customize the hover effect */
+.custom-navbar .btn:hover {
+  background-color: currentColor; /* Use the button color for the background */
+  border-color: transparent; /* Remove border on hover */
+}
+
+/* Customize the variant hover behavior */
+.custom-navbar .btn-outline-info:hover {
+  color: #fff; /* Set the text color to white on hover */
+  background-color: #17a2b8; /* Color for info variant */
+  border-color: #17a2b8; /* Set the border color to match the background */
+}
+
+.custom-navbar .btn-outline-success:hover {
+  color: #fff;
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+.custom-navbar .btn-outline-danger:hover {
+  color: #fff;
+  background-color: #dc3545;
+  border-color: #dc3545;
 }
