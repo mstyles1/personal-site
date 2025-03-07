@@ -1,24 +1,30 @@
-import { Link } from 'react-router-dom'; // Import Link for routing
-import Container from 'react-bootstrap/Container';
+import { Link } from 'react-router-dom';
+import { Container, Navbar, Nav } from 'react-bootstrap';
 
-function NavMenu() {
+export function NavMenu() {
   return (
-    <Container fluid className="d-flex align-items-center py-0 p-0 m-0 custom-navbar">
-      <img src="/images/actual-logo.png" alt="Site Logo" width="232" />
-      <div className="d-flex flex-grow-1">
-        <Link to="/coding" className="flex-grow-1 py-5 mb-0 m-0">
-          CODING
-        </Link>
-        <Link to="/comics" className="flex-grow-1 py-5 mb-0 m-0">
-          COMICS
-        </Link>
-        <Link to="/contact" className="flex-grow-1 py-5 mb-0 m-0">
-          CONTACT
-        </Link>
-      </div>
-    </Container>
+    <Navbar bg="light" expand="lg">
+      <Container>
+      <Navbar.Brand as={Link} to="/">
+  <img
+    src="./images/actual-logo.png"  // Change to your logo path
+    alt="Logo"
+    width="100"  // Adjust size as needed
+    height="auto"
+    style={{ cursor: "pointer" }} // Optional: Changes cursor on hover
+  />
+</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link as={Link} to="/">Home</Nav.Link>
+            <Nav.Link as={Link} to="/coding">Coding</Nav.Link>
+            <Nav.Link as={Link} to="/comics">Comics</Nav.Link>
+            <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 }
-
-export default NavMenu;
 
