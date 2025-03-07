@@ -1,69 +1,24 @@
-html, body {
-  width: 100%;
-  margin: 0;
-  padding: 0;
+/* Ensure links don't have default styles like underlines */
+.custom-navbar .btn,
+.custom-navbar a {
+  text-decoration: none; /* Remove underline */
+  display: flex; /* Make sure links behave like buttons */
+  align-items: center; /* Center text vertically */
 }
 
-.container, .container-fluid {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
+.custom-navbar .btn,
+.custom-navbar .btn:hover,
+.custom-navbar a,
+.custom-navbar a:hover {
+  color: inherit; /* Inherit text color */
+  border-color: inherit; /* Inherit border color */
 }
 
-.custom-navbar {
-  background-color: #1d0734 !important; 
-}
-
-.custom-toggler {
-  background-color: aliceblue;
-}
-
-.button-text {
-  font-size: 90px;
-  font-weight: bold;
-  font-family: "Iceberg", sans-serif;
-}
-
-.iceberg-regular {
-  font-family: "Iceberg", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.no-round {
-  border-radius: 0 !important;
-}
-
-.custom-navbar .btn {
-  outline: none;
-}
-
-
-.custom-navbar .btn-outline-info {
-  color: #17a2b8; 
-  border-color: #1d0734 !important; 
-}
-
-.custom-navbar .btn-outline-success {
-  color: #28a745; 
-  border-color: #1d0734 !important; 
-}
-
-.custom-navbar .btn-outline-danger {
-  color: #dc3545;
-  border-color: #1d0734 !important;
-}
-
-
-.custom-navbar .btn:hover {
-  background-color: currentColor; 
-  border-color: transparent; 
-}
-
-
+/* Other button styles for different states */
 .custom-navbar .btn-outline-info:hover {
-  color: #fff; 
-  background-color: #17a2b8; 
-  border-color: #17a2b8; 
+  color: #fff;
+  background-color: #17a2b8;
+  border-color: #17a2b8;
 }
 
 .custom-navbar .btn-outline-success:hover {
@@ -77,36 +32,3 @@ html, body {
   background-color: #dc3545;
   border-color: #dc3545;
 }
-
-.custom-toggler {
-  border: none;
-  background-color: transparent !important;
-}
-
-.custom-toggler:focus {
-  outline: none;
-  box-shadow: none;
-}
-
-@media (max-width: 768px) {
-  .custom-navbar {
-    flex-direction: column;
-    height: auto;
-  }
-  
-  .custom-navbar img {
-    width: 150px; /* Shrink logo on mobile */
-    height: auto;
-  }
-
-  .custom-navbar .d-flex {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .custom-navbar .btn {
-    width: 100%; /* Buttons take full width on mobile */
-  }
-}
-
-
