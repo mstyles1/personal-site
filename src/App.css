@@ -1,1 +1,54 @@
-
+/* Navbar custom styles */
+.custom-navbar {
+    background-color: #160123; /* Dark background */
+    padding: 10px 0; /* Vertical padding */
+    display: flex; /* Use flexbox for the navbar */
+    align-items: center; /* Vertically align items */
+    justify-content: space-between; /* Distribute space between logo and nav */
+    width: 100%; /* Full width */
+  }
+  
+  .custom-navbar .navbar-brand {
+    display: flex; /* Flexbox for the brand (logo) */
+    align-items: center; /* Center the logo vertically */
+  }
+  
+  .custom-navbar .navbar-brand img {
+    width: 100px; /* Adjust logo size */
+    height: auto; /* Maintain aspect ratio */
+    cursor: pointer; /* Pointer cursor for logo click */
+  }
+  
+  .custom-navbar .navbar-collapse {
+    display: flex; /* Flex layout for the nav links */
+    justify-content: flex-end; /* Align the buttons to the right */
+    width: auto; /* Make the collapse container take up only as much space as needed */
+  }
+  
+  .custom-navbar .nav {
+    display: flex; /* Flexbox for the nav links */
+    margin-left: auto; /* Push the nav links to the right */
+  }
+  
+  .custom-navbar .nav-link {
+    flex: 1; /* Each link takes up an equal amount of space */
+    text-align: center;
+    font-size: 18px;
+    color: #ffffff; /* Text color for nav items */
+    font-weight: 500;
+    padding: 12px 0; /* Padding for button effect */
+    margin: 0; /* Remove margin between buttons */
+    border: 2px solid transparent; /* Border for button appearance */
+    border-radius: 4px; /* Slight border radius for button corners */
+    background-color: #333; /* Button background */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
+    text-decoration: none; /* Remove underline for normal state */
+  }
+  
+  /* Hover effect for button */
+  .custom-navbar .nav-link:hover {
+    background-color: #007bff; /* Button background on hover */
+    color: #ffffff; /* Text color on hover */
+    border-color: #007bff; /* Border color on hover */
+  }
+  

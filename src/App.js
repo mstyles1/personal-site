@@ -5,6 +5,7 @@ import {NavMenu} from './component/NavMenu/NavMenu.jsx'
 import CodingPage from './component/CodingPage/CodingPage.js';
 import ComicsPage from './component/ComicsPage/ComicsPage.js';
 import ContactPage from './component/ContactPage/ContactPage.js';
+import './App.css'
 
 const App = () => {
   return (
