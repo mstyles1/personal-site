@@ -77,3 +77,36 @@ html, body {
   background-color: #dc3545;
   border-color: #dc3545;
 }
+
+.custom-toggler {
+  border: none;
+  background-color: transparent !important;
+}
+
+.custom-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+@media (max-width: 768px) {
+  .custom-navbar {
+    flex-direction: column;
+    height: auto;
+  }
+  
+  .custom-navbar img {
+    width: 150px; /* Shrink logo on mobile */
+    height: auto;
+  }
+
+  .custom-navbar .d-flex {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .custom-navbar .btn {
+    width: 100%; /* Buttons take full width on mobile */
+  }
+}
+
+
