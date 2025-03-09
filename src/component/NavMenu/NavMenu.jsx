@@ -1,16 +1,17 @@
-import { Link } from "react-router-dom";
+import NavButton from "./NavButton";
 
 const NavMenu = () => {
   return (
     <nav className="navmenu">
       <ul className="nav-links">
-        <li><Link to="/">Logo</Link></li>
-        <li><Link to="/coding">Coding</Link></li>
-        <li><Link to="/comics">Comics</Link></li>
-        <li><Link to="/contact">Contact</Link></li>
+        <NavButton to="/" className="nav-logo">Logo</NavButton>
+        <NavButton to="/coding" className="nav-coding">Coding</NavButton>
+        <NavButton to="/comics" className="nav-comics">Comics</NavButton>
+        <NavButton to="/contact" className="nav-contact">Contact</NavButton>
       </ul>
     </nav>
   );
 };
 
 export default NavMenu;
+

@@ -1,5 +1,5 @@
 .navmenu {
-  background-color: #250129;
+  background-color: #201C35;
   padding: 10px;
 }
 
@@ -16,6 +16,7 @@
 }
 
 .nav-links a {
+  font-family: "Iceberg", sans-serif;
   text-decoration: none;
   color: white;
   padding: 10px 15px;
@@ -26,3 +27,21 @@
   background-color: #555;
   border-radius: 5px;
 }
+
+.nav-logo a { color: blue; font-weight: bold; }
+.nav-coding a { color: #FFE347; }
+.nav-comics a { color: #23F0C7; }
+.nav-contact a { color: #EF767A; }
+
+.nav-logo a:hover { background-color: blue; color: white; }
+.nav-coding a:hover { background-color: #FFE347; color: black; }
+.nav-comics a:hover { background-color: #23F0C7; color: black; }
+.nav-contact a:hover { background-color: #EF767A; color: white; }
+
+.iceberg-regular {
+  font-family: "Iceberg", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
