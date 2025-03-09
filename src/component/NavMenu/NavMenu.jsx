@@ -1,30 +1,16 @@
-import { Link } from 'react-router-dom';
-import { Container, Navbar, Nav } from 'react-bootstrap';
+import { Link } from "react-router-dom";
 
-export function NavMenu() {
+const NavMenu = () => {
   return (
-    <Navbar className="custom-navbar" expand="lg">
-      <Container fluid>
-        <Navbar.Brand as={Link} to="/">
-          <img
-            src="./images/actual-logo.png"
-            alt="Logo"
-            width="100"
-            height="auto"
-            style={{ cursor: "pointer" }}
-          />
-        </Navbar.Brand>
-
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link as={Link} to="/coding">Coding</Nav.Link>
-            <Nav.Link as={Link} to="/comics">Comics</Nav.Link>
-            <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+    <nav className="navmenu">
+      <ul className="nav-links">
+        <li><Link to="/">Logo</Link></li>
+        <li><Link to="/coding">Coding</Link></li>
+        <li><Link to="/comics">Comics</Link></li>
+        <li><Link to="/contact">Contact</Link></li>
+      </ul>
+    </nav>
   );
-}
+};
+
+export default NavMenu;
