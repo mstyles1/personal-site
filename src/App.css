@@ -7,15 +7,6 @@
   align-items: center; /* Ensures everything inside is vertically aligned */
 }
 
-.nav-links {
-  list-style: none;
-  display: flex;
-  align-items: center; /* Align items vertically */
-  gap: 20px;
-  padding: 0;
-  margin: 0;
-}
-
 .nav-logo a {
   display: flex;
   align-items: center; /* Optional: Slight spacing inside */
@@ -28,8 +19,18 @@
   display: block; /* Ensure there's no extra space below the image */
 }
 
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  width: 100%; /* Makes sure it spans the navbar */
+  padding: 0;
+  margin: 0;
+}
+
 .nav-links li {
-  display: inline;
+  flex-grow: 1; /* Makes each button take equal space */
+  text-align: center; /* Centers the text */
 }
 
 .nav-links a {
@@ -40,8 +41,12 @@
   padding: 10px 15px;
   transition: 0.3s;
   display: flex;
-  align-items: center; /* Align text to navbar height */
+  align-items: center;
+  justify-content: center; /* Centers text inside button */
+  width: 100%; /* Ensures full width */
+  height: 100%;
 }
+
 
 /* Individual button colors */
 .nav-coding a { color: #FFE347; }
