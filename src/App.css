@@ -16,11 +16,6 @@
   margin: 0;
 }
 
-.nav-logo {
-  margin-right: 0; /* Ensure no extra margin */
-  margin-left: 0;  /* Ensure no extra margin */
-}
-
 .nav-logo a {
   display: flex;
   align-items: center; /* Optional: Slight spacing inside */
@@ -28,7 +23,6 @@
 }
 
 .logo-img {
-  height: 100%; /* Makes logo match navbar height */
   max-height: 120px; /* Ensures it doesn’t get too large */
   width: auto;
   display: block; /* Ensure there's no extra space below the image */
@@ -44,7 +38,6 @@
   color: white;
   padding: 10px 15px;
   transition: 0.3s;
-  height: 100%;
   display: flex;
   align-items: center; /* Align text to navbar height */
 }
@@ -55,6 +48,7 @@
 .nav-contact a { color: #EF767A; }
 
 /* Hover Effects */
-.nav-coding a:hover { background-color: #FFE347; color: black; }
-.nav-comics a:hover { background-color: #23F0C7; color: black; }
-.nav-contact a:hover { background-color: #EF767A; color: white; }
+.nav-logo a:hover { background-color:#C9C9E3; color: #201C35; }
+.nav-coding a:hover { background-color: #FFE347; color: #201C35; }
+.nav-comics a:hover { background-color: #23F0C7; color: #201C35; }
+.nav-contact a:hover { background-color: #EF767A; color: #201C35; }

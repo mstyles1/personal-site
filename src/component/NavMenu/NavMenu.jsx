@@ -1,6 +1,6 @@
 import NavButton from "./NavButton";
 import { Link } from "react-router-dom";
-import logo from "../images/actual-logo.png";
+import logo from "../images/M-logo.png";
 
 
 const NavMenu = () => {
@@ -12,9 +12,9 @@ const NavMenu = () => {
             <img src={logo} alt="Logo" className="logo-img" />
           </Link>
         </li>
-        <NavButton to="/coding" className="nav-coding">Coding</NavButton>
-        <NavButton to="/comics" className="nav-comics">Comics</NavButton>
-        <NavButton to="/contact" className="nav-contact">Contact</NavButton>
+        <NavButton to="/coding" className="nav-coding">CODING</NavButton>
+        <NavButton to="/comics" className="nav-comics">COMICS</NavButton>
+        <NavButton to="/contact" className="nav-contact">CONTACT</NavButton>
       </ul>
     </nav>
   );
