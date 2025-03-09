@@ -1,23 +1,37 @@
 .navmenu {
   background-color: #201C35;
-  padding: 10px;
+  padding: 0; /* Remove all padding */
+  margin: 0;  /* Remove margin if there's any space on the sides */
+  height: 120px; /* Set a fixed height */
+  display: flex;
+  align-items: center; /* Ensures everything inside is vertically aligned */
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  align-items: center; /* Aligns items vertically */
+  align-items: center; /* Align items vertically */
   gap: 20px;
   padding: 0;
+  margin: 0;
 }
 
 .nav-logo {
-  margin-right: auto; /* Pushes the logo to the left */
+  margin-right: 0; /* Ensure no extra margin */
+  margin-left: 0;  /* Ensure no extra margin */
+}
+
+.nav-logo a {
+  display: flex;
+  align-items: center; /* Optional: Slight spacing inside */
+  margin: 0; /* Ensure no margin around the link */
 }
 
 .logo-img {
-  height: 40px; /* Adjust size as needed */
+  height: 100%; /* Makes logo match navbar height */
+  max-height: 120px; /* Ensures it doesn’t get too large */
   width: auto;
+  display: block; /* Ensure there's no extra space below the image */
 }
 
 .nav-links li {
@@ -30,20 +44,17 @@
   color: white;
   padding: 10px 15px;
   transition: 0.3s;
+  height: 100%;
+  display: flex;
+  align-items: center; /* Align text to navbar height */
 }
 
-.nav-links a:hover {
-  background-color: #555;
-  border-radius: 5px;
-}
-
+/* Individual button colors */
 .nav-coding a { color: #FFE347; }
 .nav-comics a { color: #23F0C7; }
 .nav-contact a { color: #EF767A; }
 
+/* Hover Effects */
 .nav-coding a:hover { background-color: #FFE347; color: black; }
 .nav-comics a:hover { background-color: #23F0C7; color: black; }
 .nav-contact a:hover { background-color: #EF767A; color: white; }
-
-
-
