@@ -34,6 +34,7 @@
 
 .nav-links a {
   font-family: "Iceberg", sans-serif;
+  font-size: 82px;
   text-decoration: none;
   color: white;
   padding: 10px 15px;
@@ -48,7 +49,6 @@
 .nav-contact a { color: #EF767A; }
 
 /* Hover Effects */
-.nav-logo a:hover { background-color:#C9C9E3; color: #201C35; }
 .nav-coding a:hover { background-color: #FFE347; color: #201C35; }
 .nav-comics a:hover { background-color: #23F0C7; color: #201C35; }
 .nav-contact a:hover { background-color: #EF767A; color: #201C35; }
