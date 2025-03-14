@@ -14,9 +14,9 @@
 }
 
 .logo-img {
-  max-height: 120px; /* Ensures it doesn’t get too large */
-  width: auto;
-  display: block; /* Ensure there's no extra space below the image */
+  max-height: 120px; /* Increase the max height */
+  width: auto; /* Maintain aspect ratio */
+  display: block;
 }
 
 .nav-links {
