@@ -3,7 +3,6 @@ import {Link} from "react-router-dom";
 import CodingPage from "../CodingPage/CodingPage";
 import ContactPage from "../ContactPage/ContactPage";
 import ComicsPage from "../ComicsPage/ComicsPage";
-import profile from "../images/profile-photo.jpg";
 
 const LandingPage = () => {
   return (
@@ -17,7 +16,7 @@ const LandingPage = () => {
         <p className="profile-blurb">Thanks for visiting my site! I'm a Knoxville-based creative with skills in both web development and creative writing. As a certified front-end and back-end developer, I'm driven to build clean, user and collaborator-friendly websites. You can take a shortcut to my portfolio via the <Link to="/coding" className="bold-link">coding</Link> tab. I'm also a published writer with more books on the way! Check out my stories under the <Link to="/comics" className="bold-link">comics</Link> tab. Please feel free to reach out 
           with any inquiries via the <Link to="/contact" className="bold-link">contacts</Link> tab. From my dog Remy and I, have a wonderful day!</p> 
           <img 
-            src={profile} 
+            src="/images/profile-photo.jpg" 
             alt="Profile" 
             className="profile-photo"
           />
