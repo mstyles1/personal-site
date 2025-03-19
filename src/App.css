@@ -37,7 +37,7 @@
   font-family: "Iceberg", sans-serif;
   font-size: 82px;
   text-decoration: none;
-  color: white;
+  color: #E6E4F1;
   padding: 10px 15px;
   transition: 0.3s;
   display: flex;
@@ -47,6 +47,25 @@
   height: 100%;
 }
 
+body {
+  background-color:#E6E4F1
+}
+
+.content {
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding-left: 20px;
+}
+
+.profile-photo {
+  border: 7px solid #201C35;
+  border-radius: 15%;
+}
+
+.welcome-blurb {
+  text-align: center;
+}
 
 /* Individual button colors */
 .nav-coding a { color: #FFE347; }
@@ -57,3 +76,5 @@
 .nav-coding a:hover { background-color: #FFE347; color: #201C35; }
 .nav-comics a:hover { background-color: #23F0C7; color: #201C35; }
 .nav-contact a:hover { background-color: #EF767A; color: #201C35; }
+
+
