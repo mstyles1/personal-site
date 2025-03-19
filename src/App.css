@@ -1,33 +1,40 @@
 body {
   background-color: #E6E4F1;
+  margin: 0; /* Remove default body margin */
+  height: 100vh; /* Ensure the body takes up the full height of the viewport */
 }
 
 .content {
+  display: flex;
+  flex-direction: column; /* Ensure content stacks vertically */
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
   font-family: "Kanit", sans-serif;
   font-weight: 400;
   font-style: normal;
-  align-items: center;
+  text-align: center; /* Ensure text is centered */
+  min-height: 100%; /* Ensure content takes full height of viewport */
 }
 
 .profile {
   display: flex;
   align-items: center;
-  gap: 20px; /* Space between image and text */
+  justify-content: center; /* Center the profile image and text horizontally */
+  gap: 20px;
 }
 
 .profile-photo {
   border: 7px solid #201C35;
   border-radius: 15%;
-  width: 120px; /* Keeps image size consistent */
+  width: 120px;
 }
 
 .profile-blurb {
-  font-size: 1.2rem; /* Adjust text size as needed */
+  font-size: 1.2rem;
   margin: 0;
 }
 
 .welcome-blurb {
-  text-align: center;
   font-weight: bold;
 }
 
@@ -89,4 +96,5 @@ body {
 .nav-coding a:hover { background-color: #FFE347; color: #201C35; }
 .nav-comics a:hover { background-color: #23F0C7; color: #201C35; }
 .nav-contact a:hover { background-color: #EF767A; color: #201C35; }
+
 
