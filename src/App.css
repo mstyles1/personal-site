@@ -155,6 +155,8 @@ body {
 .nav-links li {
   flex-grow: 1; /* Makes each button take equal space */
   text-align: center; /* Centers the text */
+  overflow: hidden; /* Prevents the hover effect from spilling */
+
 }
 
 .nav-links a {
@@ -166,9 +168,10 @@ body {
   transition: 0.3s;
   display: flex;
   align-items: center;
-  justify-content: center; /* Centers text inside button */
+  justify-content: center; /* Centers text inside button */ 
   width: 100%; /* Ensures full width */
   height: 100%;
+  box-sizing: border-box;
 }
 
 /* Individual button colors */
