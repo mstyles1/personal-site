@@ -8,7 +8,7 @@ const NavMenu = () => {
       <ul className="nav-links">
         <li className="nav-logo">
           <Link to="/">
-            <img src="/imges/M-logo.png" alt="Logo" className="logo-img" />
+            <img src="/images/M-logo.png" alt="Logo" className="logo-img" />
           </Link>
         </li>
         <NavButton to="/coding" className="nav-coding">CODING</NavButton>
