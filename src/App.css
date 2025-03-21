@@ -32,13 +32,15 @@ body {
   align-items: center;
   justify-content: center; /* Center the profile image and text horizontally */
   gap: 40px;
-  border-bottom: 100px solid #E6E4F1; 
+  border-bottom: 100px solid #E6E4F1;
+  height: auto; /* Make sure the height is flexible */
 }
 
 .profile-photo {
   border: 7px solid #201C35;
   border-radius: 15%;
   width: 200px;
+  object-fit: cover; /* Ensure the image maintains its aspect ratio */
 }
 
 .profile-blurb-container {
@@ -48,8 +50,12 @@ body {
   max-width: 500px; /* Control the width of the bio */
   text-align: center; /* Center the text */
   color: white; /* White text on dark background */
-  margin-top: 20px; /* Add some space above the bio */
+  margin-top: 0; /* Remove margin top to keep alignment consistent */
+  display: flex;
+  align-items: center; /* Vertically center the text */
+  justify-content: center;
 }
+
 
 .profile-blurb {
   font-size: 1.2rem;
