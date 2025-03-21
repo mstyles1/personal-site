@@ -129,19 +129,25 @@ body {
   height: 120px;
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Aligns items horizontally */
   position: relative;
+  width: 100%;
 }
 
 .nav-container {
   display: flex;
   align-items: center;
+  justify-content: flex-start; /* Align items to the left */
   width: 100%;
-  justify-content: space-between;
-  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 /* Logo Styling */
+.nav-logo {
+  flex-shrink: 0; /* Prevent the logo from shrinking */
+  margin-right: 20px; /* Space between the logo and nav items */
+  padding-left: 15px;
+}
+
 .nav-logo a {
   display: flex;
   align-items: center;
@@ -158,13 +164,17 @@ body {
   list-style: none;
   display: flex;
   align-items: center;
-  width: 100%;
   padding: 0;
   margin: 0;
+  width: calc(100% - 40px); /* Subtract padding on both sides */
+  /* Ensure links take full width minus logo and padding */
 }
 
 .nav-links li {
-  flex-grow: 1;
+  flex-grow: 1; /* Ensures each button gets equal width */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
@@ -178,9 +188,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 100%;
-  box-sizing: border-box;
+  width: 100%; /* Ensure the buttons fill the entire space of each li */
+  height: 100%; /* Make sure buttons have equal height */
+  box-sizing: border-box; /* Prevent padding from affecting width/height */
+  text-align: center;
 }
 
 /* Individual button colors */
@@ -221,6 +232,7 @@ body {
     background-color: #201C35;
     text-align: center;
     padding: 20px 0;
+    box-sizing: border-box;
   }
 
   .nav-links.active {
@@ -230,8 +242,6 @@ body {
   .nav-links a {
     font-size: 48px;
     padding: 15px;
+    width: 100%; /* Make sure mobile links take up full width */
   }
 }
-
-
-
