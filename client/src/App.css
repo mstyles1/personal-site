@@ -52,7 +52,6 @@ body {
   border-radius: 15px; /* Match the border radius of the profile photo */
   max-width: 500px; /* Control the width of the bio */
   text-align: center; /* Center the text */
-  color: white; /* White text on dark background */
   margin-top: 0; /* Remove margin top to keep alignment consistent */
   display: flex;
   align-items: center; /* Vertically center the text */
@@ -61,6 +60,7 @@ body {
 
 
 .profile-blurb {
+  color: white; /* White text on dark background */
   font-size: 1.2rem;
   margin: 0;
 }
