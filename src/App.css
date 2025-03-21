@@ -18,13 +18,14 @@ body {
 
 .welcome-blurb {
   font-weight: bold;
-  margin-bottom: 5px;
+  margin-top: 20px;
+  margin-bottom: 0px;
 }
 
 .welcome-blurb2 {
   font-weight: bold;
-  font-size: 24px;
-  margin-top:5px;
+  font-size: 21px;
+  margin-top: 0px;
 }
 
 .profile {
@@ -32,8 +33,9 @@ body {
   align-items: center;
   justify-content: center; /* Center the profile image and text horizontally */
   gap: 40px;
-  border-bottom: 100px solid #E6E4F1;
   height: auto; /* Make sure the height is flexible */
+  margin-top: 40px;
+  margin-bottom: 90px;
 }
 
 .profile-photo {

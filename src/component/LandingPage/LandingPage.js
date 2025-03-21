@@ -9,7 +9,7 @@ const LandingPage = () => {
     <div className="content">
       {/* Welcome Container */}
       <h1 className="welcome-blurb">welcome to mattstyles.com</h1>
-      <h2 className="welcome-blurb2">I write comics and code.</h2>
+      <h2 className="welcome-blurb2">(I write comics and code)</h2>
 
       {/* Profile Container */}
       <div className="profile">
